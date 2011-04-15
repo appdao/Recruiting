@@ -127,9 +127,9 @@ about_us = """
 """
 
 
-def tranversal_q(list):
+def tranversal_q(pos_list):
     res = 0
-    for item in list:
+    for item in pos_list:
         res = res + query_yes_no(item) 
     return res
 
@@ -165,15 +165,15 @@ def choose_pos():
     return pos-1 
     #print query_yes_no("hi")
 
-def check_list(list):
-    res = tranversal_q(list[0])
-    if res > list[1]:
+def check_list(pos_list):
+    res = tranversal_q(pos_list[0])
+    if res > pos_list[1]:
         return True
     return False
 
-def output(str):
+def output(outstr):
     print_sep()
-    print str
+    print outstr
     print_sep()
 
 
